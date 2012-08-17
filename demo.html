@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DEMO - jQuery Simple Select Box Skinning - Dropbox Simple Skinning - jQuery Select Box Skinning made simple</title>
+
+    <link href="assets/css/select-skin.css" rel="stylesheet">
+    <style type="text/css">
+        .your-selectbox-class
+        {
+            width:195px; height:25px;
+            background:url("assets/img/dropbox_background.png") no-repeat;
+        }
+
+        .your-selectbox-class > span
+        {
+            font-size:10px;
+            color:#0F0F0F;
+            margin-left:5px;
+        }
+    </style>
+  </head>
+
+  <body>
+  
+    <select class="interesting">
+        <option>I'm interesting and new and blah!</option>
+        <option>Yes I'm.</option>
+        <option>And I'm also easy to implement.</option>
+    </select>
+    
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        
+    <script src="assets/js/jquery.select-skin.js"></script>
+    <script type="text/javascript">
+        // Is this Simple enought?
+        $(document).ready(function () {
+            $(".interesting").selectSkin("your-selectbox-class");
+        });
+    </script>
+
+  </body>
+</html>
